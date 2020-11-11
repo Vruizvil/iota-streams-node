@@ -9,13 +9,23 @@
     "neon-cli": "^0.5.0"
   },
   "scripts": {
-    "install": "neon build"
+    "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
+    "package": "node-pre-gyp package",
+    "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username-here/your-project-here.git"
+    "url": "git+https://github.com/snaphash/iota-streams-node.git"
   },
   "files": [
     "lib"
   ],
+  "binary": {
+    "module_name": "index",
+    "host": "https://github.com/snaphash/iota-streams-node/releases/download/",
+    "remote_path": "{version}",
+    "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
+    "module_path": "./native",
+    "pkg_path": "."
+  }
 }

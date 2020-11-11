@@ -1,6 +1,6 @@
-# iota-publisher
+# Introduction
 
-For SSL certificate error
+npm module to run rust based iota streams in a javascript based environment
 
-    export NODE_TLS_REJECT_UNAUTHORIZED=0
+
 
