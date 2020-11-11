@@ -1,6 +1,6 @@
 {
-  "name": "node-red-contrib-snaphash-iota-streams",
-  "version": "1.0",
+  "name": "@snaphash/iota-streams-node",
+  "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
   "author": "Hammad Aslam Khan <raohammad@gmail.com>",
