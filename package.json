@@ -6,7 +6,8 @@
   "author": "Hammad Aslam Khan <raohammad@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "neon-cli": "^0.5.0"
+    "neon-cli": "^0.5.0",
+    "node-pre-gyp": "^0.16.0"
   },
   "scripts": {
     "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
@@ -27,5 +28,8 @@
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
     "module_path": "./native",
     "pkg_path": "."
+  },
+  "devDependencies": {
+    "node-pre-gyp-github": "^1.4.3"
   }
 }
