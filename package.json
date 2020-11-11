@@ -1,0 +1,21 @@
+{
+  "name": "node-red-contrib-snaphash-iota-streams",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "author": "Hammad Aslam Khan <raohammad@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "neon-cli": "^0.5.0"
+  },
+  "scripts": {
+    "install": "neon build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username-here/your-project-here.git"
+  },
+  "files": [
+    "lib"
+  ],
+}

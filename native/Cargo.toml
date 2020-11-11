@@ -1,0 +1,25 @@
+[package]
+name = "iota-publisher"
+version = "0.1.0"
+authors = ["Hammad Aslam Khan <raohammad@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+edition = "2018"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "iota_publisher"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.4.0"
+
+[dependencies]
+neon = "0.4.0"
+neon-serde = "0.4.0"
+serde_derive = "1.0.80"
+serde = "1.0.80"
+anyhow = { version = "1.0", default-features = false }
+iota-conversion = { git = "https://github.com/iotaledger/iota.rs", rev = "03cf531" }
+iota-streams = { git = "https://github.com/iotaledger/streams", rev = "456347a"}
+iota-core = { git = "https://github.com/iotaledger/iota.rs", rev = "74fa529" }
