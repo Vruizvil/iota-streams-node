@@ -3,7 +3,8 @@ os:
   - linux
 language: node_js
 node_js:
-  - 12
+  - node
+  - 10
 cache: cargo
 before_install:
   # Install Rust and Cargo
