@@ -4,7 +4,8 @@
   "description": "",
   "main": "lib/index.js",
   "author": "Hammad Aslam Khan <raohammad@gmail.com>",
-  "license": "MIT",
+  "license": "LicenseRef-LICENSE",
+  "publishConfig": {"access": "public"},
   "dependencies": {
     "neon-cli": "^0.5.0",
     "node-pre-gyp": "^0.16.0"
